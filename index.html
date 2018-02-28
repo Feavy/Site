@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-<body class="bg-light">
+<body>
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5F5F5; border-bottom: 2px solid #E0E0E0;"> <!-- fixed-top -->
 		<a class="navbar-brand" href="#">
 			<img src="resources/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Feavy
@@ -39,7 +39,7 @@
 	</div>
 	<div class="breadcrumb-image img-fluid" style="background-image: url(resources/banner.png);"></div>
 
-	<div class="container" style="background-color: white;">
+	<div class="container">
 		<!-- Exemples de projets :
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
@@ -72,7 +72,10 @@
 		<section id="presentation">
 			<h2>Présentation</h2>
 			<p style="text-align: justify;">
-			[Paragraphe de test] It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.[6] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[6] including desktop applications, servers (e.g. e-commerce, web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[7] C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM.
+				Je m'appelle Quentin, j'ai 17 ans et je suis passionné d'informatique depuis que je suis au collège. Je suis actuellement en terminale S SVT spécialité Mathématiques ce qui, vous l'aurez peut-être deviné, veut dire que je n'ai encore jamais fait d'informatique dans le cadre de mes études (si on ne compte pas les cours d'algorithmique à deux balles de seconde).<br>
+				Mais j'ai eu la chance de découvrir ce domaine lorsque j'étais en quatrième. En effet à l'époque je jouais beaucoup à Minecraft et je regardais également beaucoup de Youtubeurs jouer à ce jeu. Parmi eux : <a href="https://www.youtube.com/user/aypierre" target="_blank">Aypierre</a> et sa série <span class="font-italic">Feed The Patrick</span> dans laquelle lui et d'autres Youtubeurs (les patricks) jouaient ensemble sur un serveur moddé. Dans l'<a href="https://youtu.be/0rUNxBt84ag?t=1m41s" target="_blank">épisode 11</a>, Aypierre visite la base de <a href="https://www.youtube.com/user/richie3366" target="_blank">richie3366</a>, ce dernier utilisant en partie des petits robots (turtles) programmables en lua pour automatiser sa production d'énergie. Cela m'a beaucoup intéressé, j'ai donc téléchargé le mod en question (<a href="http://www.computercraft.info" target="_blank">ComputerCraft</a>, que je recommande d'ailleurs à tous ceux qui veulent s'initier à la programmation de manière ludique) et commencé à créer mes premiers programmes (automatisation du minage, de la création d'escaliers, de salles et d'autres programmes en connexion avec des écrans : ouverture d'une porte par mot de passe, mini-jeux etc...). [TODO : A continuer...]<br>
+				C'est donc grâce à eux que j'ai pu découvrir le monde de la programmation et donc tenir aujourd'hui ce petit portfolio comprenant différentes productions informatiques que j'ai pu faire. Parmi elles, certaines sont restées à l'état de <span class="font-italic">brouillon</span> ; je pense notamment à l'outil pour le jeu Blablaland (en même temps le jeu a fermé donc je peux vraiment travailler dessus) et d'autres sont entièrement fonctionelles.<br>
+				Vous pouvez également retrouver sur ce site mes projets en cours ce qui, j'espère, me donnera envie de les continuer.
 			<br>TODO :
 			<br>- Créer page pour chaque projet avec un slider, une présentation, lien de téléchargement et code source ?
 			<br>- Changer les cards (projets achevés) en cards cliquables avec uniquement l'image et le nom du projet
@@ -81,17 +84,19 @@
 		<br>
 		<section id="achievedProjects">
 			<h2>Projets achevés</h2>
-			<p>Format des images : 540 x 180</p>
+			<p>Cliquez pour avoir plus d'informations<br>
+			TODO : Format des images : 540 x 180</p>
 			<div class="card-deck">
 
 				<div class="card text-center" style="min-width: 20em; margin-top: 1em;">
 					<img class="card-img-top" src="resources/blue.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Blue</h5>
-						<p class="card-text">Un logiciel pour le jeu Darkorbit permettant de miser sur les enchères horaires automatiquement.</p>
+						<div class="line_separator_black mx-auto"></div>
+						<p class="card-text">Un logiciel pour le jeu Darkorbit permettant d'automatiser les echères horaires.</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : C++
+						C++ & Qt
 					</div>
 				</div>
 
@@ -99,11 +104,11 @@
 					<img class="card-img-top" src="resources/aim.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Améliorer son aim</h5>
+						<div class="line_separator_black mx-auto"></div>
 						<p class="card-text">Un plugin pour le jeu Minecraft permettant d'améliorer sa précision à l'épée.</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : Java<br><br>
-						<a href="https://www.youtube.com/watch?v=gnnPtmXRWA0" class="btn btn-primary" target="_blank">Plus d'infos</a>
+						Java
 					</div>
 				</div>
 
@@ -111,11 +116,11 @@
 					<img class="card-img-top" src="resources/potsviewer.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">PotsViewer</h5>
+						<div class="line_separator_black mx-auto"></div>
 						<p class="card-text">Un mod pour le jeu Minecraft permettant de voir le nombre de potions utilisées par chaque joueur lors de duels</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : Java<br><br>
-						<a href="https://www.youtube.com/watch?v=iHrUOD8J7tY" class="btn btn-primary" target="_blank">Plus d'infos</a>
+						Java
 					</div>
 				</div>
 
@@ -123,11 +128,11 @@
 					<img class="card-img-top" src="resources/blablaland.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Blablaland Hack</h5>
-						<p class="card-text">Un petit utilitaire s'utilisant avec un proxy externe, en ligne de commande, qui permettait de tricher sur l'ancien jeu Blablaland. Il était par exemple possible de se téleporter sur des maps gratuitement.</p>
+						<div class="line_separator_black mx-auto"></div>
+						<p class="card-text">Un petit utilitaire s'utilisant avec un proxy externe, qui permettait de tricher sur l'ancien jeu Blablaland.</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : Java
-						<!--<a href="#" class="btn btn-primary">Plus d'info</a>-->
+						Java
 					</div>
 				</div>
 
@@ -135,10 +140,11 @@
 					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Super Mario Earthquake</h5>
+						<div class="line_separator_black mx-auto"></div>
 						<p class="card-text">Un petit jeu vidéo réalisé dans le cadre des TPE de première. Il faisait office de production finale.</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : Java
+						Java
 						<!--<a href="#" class="btn btn-primary">Plus d'info</a>-->
 					</div>
 				</div>
@@ -147,11 +153,23 @@
 					<img class="card-img-top" src="resources/xeovapps.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Xeovapps</h5>
+						<div class="line_separator_black mx-auto"></div>
 						<p class="card-text">Un site vitrine réalisé afin de présenter les jeux mobiles que j'ai créés.</p>
 					</div>
 					<div class="card-footer">
-						Langages utilisés : HTML & CSS<br><br>
-						<a href="https://xeovapps.com" class="btn btn-primary" target="_blank">Plus d'infos</a>
+						HTML & CSS
+					</div>
+				</div>
+
+				<div class="card text-center mx-auto" style="min-width: 20em; margin-top: 1em; max-width: 32rem;">
+					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Déchiffreur Darkobit : main.swf</h5>
+						<div class="line_separator_black mx-auto"></div>
+						<p class="card-text">Un logiciel permettant de déchiffrer le fichier principal du jeu Darkorbit.</p>
+					</div>
+					<div class="card-footer">
+						C++ & Qt
 					</div>
 				</div>
 
@@ -162,56 +180,49 @@
 		<br><br>
 		<section id="currentProjects">
 			<h2>Projets en cours</h2>
-			<p>Voici quelques projets sur lesquels je travaille en ce moment :</p>
+			<p>Voici quelques projets sur lesquels je travaille occasionnellement :</p>
 
 			<div class="card-deck">
 				<div class="card text-center" style="min-width: 20em; margin-top: 1em;">
-					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Blue (ligne de commande)</h5>
-						<p class="card-text">Un version du logiciel Blue en version ligne de commande, ce qui permettrait de l'utiliser sur un Raspberry Pi.</p>
+						<p class="card-text">Un variante du logiciel Blue en version ligne de commande, pour l'utiliser sur un Raspberry Pi.</p>
 					</div>
 					<div class="card-footer">
-						Langage utilisé : C++
+						C++
 					</div>
 				</div>
 
 				<div class="card text-center" style="min-width: 20em; margin-top: 1em;">
-					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Weather</h5>
-						<p class="card-text">Un jeu mobile.</p>
-					</div>
-					<div class="card-footer">
-						Langage utilisé : Javascript
-					</div>
-				</div>
-
-				<div class="card text-center" style="min-width: 20em; margin-top: 1em;">
-					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Pokemon Red Maker</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						<p class="card-text">Une recréation de Pokémon Version Rouge en Java (mais j'envisage de tout recommencer en C++ avec la lib SMFL).</p>
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-primary">Plus d'info</a>
+						Java
 					</div>
 				</div>
 
 				<div class="card text-center" style="min-width: 20em; margin-top: 1em;">
-					<img class="card-img-top" src="resources/default.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Red</h5>
-						<p class="card-text">Bot pour le jeu flash Darkorbit qui permettra de vendre des minerais reçus du Skylab au démarrage de l'ordinateur.</p>
+						<p class="card-text">Un bot pour le jeu flash Darkorbit qui permettra de vendre des minerais stockés dans le Skylab, et d'envoyer une nouvelle cargaison, au démarrage de l'ordinateur.</p>
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-primary">Plus d'info</a>
+						C++ & Qt
 					</div>
 				</div>
 
 			</div>
 		</section>
 	</div>
+	<footer style="background-color: #607D8B; padding: 2em;">
+		<center>
+			<div class="line_separator_white"></div>
+			<a href="https://www.youtube.com/c/feavy" target="_blank"><img src="resources/youtube.png"></a>
+			<a href="https://www.twitter.com/feavyyt" target="_blank"><img src="resources/twitter.png"></a>
+		</center>
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
