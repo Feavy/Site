@@ -43,7 +43,7 @@
 			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		</ol>
-		<div class="carousel-inner mx-auto">
+		<div class="carousel-inner mx-auto" id="carousel1">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="resources/blue/connexion.png" alt="First slide">
 			</div>
@@ -94,15 +94,18 @@
 	</footer>
 	<script>
 
-		var items = document.getElementsByClassName("carousel-item");
+		var item = document.getElementById("carousel1");
+		var clicked = false;
 
-		for(var i = 0; i < items.length; i++ ){
-			items[i].firstElementChild.addEventListener("click",
-				function(sender){
-					console.log(sender.target);
-					sender.target.style.width = "1000px";
-				});
-		}
+		item.addEventListener("click",
+			function(sender){
+				console.log(sender.target);
+				if(!clicked)
+					sender.target.style = "px-moz-transform: scale(1.75); -webkit-transform: scale(1.75); transform: scale(1.75);";
+				else
+					sender.target.style = "px-moz-transform: scale(1); -webkit-transform: scale(1); transform: scale(1);";
+				clicked = !clicked;
+			});
 
 	</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

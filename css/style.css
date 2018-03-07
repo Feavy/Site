@@ -95,9 +95,3 @@ footer img:hover{
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-
-.carousel-item img:active{
-    -moz-transform: scale(1.75);
-    -webkit-transform: scale(1.75);
-    transform: scale(1.75);
-}
