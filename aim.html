@@ -27,8 +27,8 @@
 						Logiciels
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#" current>Blue</a>
-						<a class="dropdown-item" href="aim.html" current>Aim</a>
+						<a class="dropdown-item" href="#" current>Aim</a>
+						<a class="dropdown-item" href="blue.html" current>Blue</a>
 					</div>
 				</li>
 			</ul>
@@ -36,7 +36,7 @@
 	</nav>
 
 	<br>
-	<h1 class="text-center">Blue</h1>
+	<h1 class="text-center">Aim</h1>
 	<br>
 	<div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -46,21 +46,22 @@
 		</ol>
 		<div class="carousel-inner mx-auto" id="carousel1">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="resources/blue/connexion.png" alt="First slide">
+				<img class="d-block w-100" src="resources/aim/files.png" alt="First slide">
 				<div class="carousel-caption d-none d-md-block">
-    				<p>L'interface de connexion</p>
+					<p>e</p>
+    				<p style="color: black;">L'archive contenant les fichiers nécessaires</p>
   				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="resources/blue/items.png" alt="Second slide">
+				<img class="d-block w-100" src="resources/aim/map.png" alt="Second slide">
 				<div class="carousel-caption d-none d-md-block">
-    				<p>L'interface de choix des objets</p>
+    				<p>La map</p>
   				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="resources/blue/bot.png" alt="Third slide">
+				<img class="d-block w-100" src="resources/aim/code.png" alt="Third slide">
 				<div class="carousel-caption d-none d-md-block">
-    				<p>L'interface de paramétrage du bot</p>
+    				<p>Un extrait de code</p>
   				</div>
 			</div>
 		</div>
@@ -77,21 +78,37 @@
 		<br><br><div class="line_separator_black mx-auto"></div><br>
 		<section id="presentation">
 			<h2>Présentation</h2>
-
-			Blue est un petit logiciel permettant d'automatiser les mises sur les enchères horaires du jeu Darkorbit. En effet, après vous être connecté au jeu avec cet outil, vous aurez la possibilité de choisir les objets que vous souhaitez acquérir. Le logiciel se chargera ensuite de miser une somme fixée de crédits sur ces objets chaque heure. Vous devez définir le temps entre la fin des enchères et la mise, sachez que toutes les mises doivent être espacées d'au moins 10 secondes entre elles pour assurer le bon fonctionnement du logiciel.
+			Aim est un plugin pour le jeu Minecraft qui fonctionne de paire avec une map. Il propose différents exercices permettant de perfectionner sa précision dans le jeu afin de s'améliorer au PvP notamment. Après avoir lancé le serveur, vous pourrez vous y connecter via l'adresse <span class="font-weight-bold">localhost</span> (ou <span class="font-weight-bold">127.0.0.1</span>). Vous vous retrouverez ainsi dans le hub à partir duquel vous pourrez vous téléporter à l'exercice qui vous plaît en cliquant simplement sur le panneau correspondant (clique droit). A noter que vous pourrez retourner au hub à tout moment via la commande <span class="font-weight-bold">/hub</span>. Une fois téléporté au lieu de l'exercice, appuyez sur le bouton pour le démarrer. <span class="font-weight-bold">L'objectif de l'exercice vous sera donné dans le tchat.</span> (<span class="font-italic">À noter que l'exercice ne commence vraiment que lorsque vous faites la première action.</span>).<br><br>Après avoir terminé un exercice, un message s'affichera dans le tchat en fonction de votre performance. <span class="font-weight-bold">Quatre messages peuvent s'afficher :</span><br><br>
+			<ul class="list-group">
+				<li class="list-group-item"><span class="badge badge-primary badge-pill">1</span> "Votre aim n'est pas très bonne, il va falloir vous entraîner. Commencez par réessayez cet exercice."</li>
+				<li class="list-group-item"><span class="badge badge-primary badge-pill">2</span> "Votre aim est moyenne, continuez de vous entraîner."</li>
+				<li class="list-group-item"><span class="badge badge-primary badge-pill">3</span> "Votre aim est bonne, mais elle pourrait être encore meilleure."</li>
+				<li class="list-group-item"><span class="badge badge-primary badge-pill">4</span> "Votre aim est EXCELLENTE ! Vous pouvez passer aux autres exercices."</li>
+			</ul>
+			<br>
+			Vous pouvez donc vous donner comme objectif d'obtenir le message n°4 à chacun des exercices.
+			<br><br>
+			Pour plus d'informations vous pouvez visionner ma vidéo de présentation de la map :<br><br>
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gnnPtmXRWA0" allowfullscreen></iframe>
+			</div>
 		</section>
 		<br>
 		<section id="technical">
 			<h2>Partie technique</h2>
 
-			Ce logiciel a été fait en C++ avec le framework Qt pour gérer simplement l'interface utilisateur et la communication avec le serveur en https.
-			Ce logiciel est donc multiplateforme en théorie mais je n'ai publié qu'une version Windows car c'est l'OS que j'utilise.
-			Je ne conserve aucune information relative à votre compte.
+			Ce plugin a été réalisé en java avec la bibliothèque Spigot (anciennement Craftbukkit).<br>
+			De ce que je me souviens j'ai mis à peu près une quinzaine d'heures à faire le plugin, la map et la vidéo de présentation.<br><br>
+			Vous pouvez télécharger l'outil ci-dessous et même accéder au code source (que je trouve peu qualitatif avec du recul).
 		</section>
 		<br>
-		<section id="note" class="font-italic">
-			Note : Pour des raisons évidentes ce logiciel n'est pas diponible sur le site. Toutefois, s'il vous intéresse, vous pouvez me le demander en <a href="index.html#contact">mail</a>.
+		<section id="downloads">
+			<div class="line_separator_black mx-auto"><br>
+			<div class="text-center">
+				<a class="btn btn-outline-primary" href="https://github.com/Feavy/Aim" target="_blank" role="button">Code source</a><a class="btn btn-outline-primary" href="http://www.mediafire.com/file/mzd6c9mby4fg8dy/Spigot+-+Am%C3%A9liorer+son+Aim.rar" target="_blank" role="button">Télécharger</a>
+			</div>
 		</section>
+		<br>
 		<br>
 
 	</div>
