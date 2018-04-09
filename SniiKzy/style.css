@@ -323,14 +323,15 @@ footer > a:hover{
         height: 20px;
         transform: none;
         border-radius: 0px 0px 30px 30px;
+        box-shadow: 0px 5px 10px -1px rgb(0, 0, 0, 0.3)
     }
 
-    #navbar #middle #medias > img{
-        top: -33px;
+    #navbar #middle #medias a img{
         transform: none;
+        top: -33px;
     }
 
-    #navbar #middle #medias img:hover{
+    #navbar #middle #medias a img:hover{
         transform: scale(1.1);
         top: -38px;
     }
