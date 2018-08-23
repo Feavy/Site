@@ -76,10 +76,10 @@ function decodeWonderMail() {
         sum &= 0xFF;
     }
 
-    //////////////////////////
-
     if(sum != contentByteArray[0])
         alert("Code invalide");
+
+    //////////////////////////
 
     var pos = 0;
 
