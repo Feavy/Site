@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<canvas height="1000" width="1000" id="canvas"></canvas>
+	<div id="map"> </div>
+
+	<script>
+
+		function Random(seed) {
+		  this._seed = seed % 2147483647;
+		  if (this._seed <= 0) this._seed += 2147483646;
+		}
+
+		Random.prototype.setSeed = function(seed){
+			this._seed = seed % 2147483647;
+		  	if (this._seed <= 0) this._seed += 2147483646;
+		}
+
+		/**
+		 * Returns a pseudo-random value between 1 and 2^32 - 2.
+		 */
+		Random.prototype.next = function () {
+		  return this._seed = this._seed * 16807 % 2147483647;
+		};
+
+
+		/**
+		 * Returns a pseudo-random floating point number in range [0, 1).
+		 */
+		Random.prototype.nextFloat = function (opt_minOrMax, opt_max) {
+		  // We know that result of next() will be 1 to 2147483646 (inclusive).
+		  return (this.next() - 1) / 2147483646;
+		};
+
+		var canvas = document.getElementById("canvas");
+
+		if(!canvas){
+			alert("Erreur : canvas non trouvÃ© !");
+		}
+
+		var g = canvas.getContext("2d");
+		if(!g){
+			alert("Erreur : contexte non trouvÃ© !");
+		}
+
+		var seed = 42;
+
+		var pointAmount = 1000;
+
+		var mapData = [];
+		var mapWidth = 100;
+
+		var rand = new Random(Math.random()*1000);
+		rand.next();
+
+		for(var i = 0; i < mapWidth; i++){
+			mapData[i] = [];
+			for(var j = 0; j < mapWidth; j++){
+				mapData[i][j] = 0;
+			}
+		}
+
+		for(var i = 0; i < pointAmount; i++){
+			var origin = {x:Math.floor(rand.nextFloat()*mapWidth), y:Math.floor(rand.nextFloat()*mapWidth)};
+
+			var radius = 0.08;
+			var depth = Math.floor(rand.nextFloat()*50)+20;
+
+			//console.log("Point : ("+origin.x+";"+origin.y+") | Radius : "+radius+" | Depth : "+depth);
+
+			for(var j = 0; j < depth; j++){
+				var currentPoint = {x: origin.x, y: origin.y};
+				currentPoint.x += (((rand.nextFloat()*3)-1)*j)*radius;
+				currentPoint.y += (((rand.nextFloat()*3)-1)*j)*radius;
+
+				if(currentPoint.x > mapWidth)
+					currentPoint.x = mapWidth-1;
+				else if(currentPoint.x < 0)
+					currentPoint.x = 0;
+
+				if(currentPoint.y > mapWidth)
+					currentPoint.y = mapWidth-1;
+				else if(currentPoint.y < 0)
+					currentPoint.y = 0;
+
+				currentPoint.x = Math.floor(currentPoint.x);
+				currentPoint.y = Math.floor(currentPoint.y);
+				mapData[currentPoint.x][currentPoint.y] += 1;
+			}
+
+		}
+		
+		canvas.addEventListener("click", function(e){
+			console.log(mapData[Math.floor(e.layerX/10)][Math.floor(e.layerY/10)]);
+		});
+
+		var map = document.getElementById("map");
+		for(i = 0; i < mapWidth; i++){
+			for(var j = 0; j < mapWidth; j++){
+				g.fillStyle = "rgb(0,"+(255-mapData[i][j]*10)+",255)";
+				g.fillRect(i*10,j*10,10,10);
+			}	
+			//map.innerHTML += mapData[i].join(",")+"<br>";
+		}
+	</script>
+</body>
+</html>
