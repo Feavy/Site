@@ -45,7 +45,7 @@ class Snake{
 		this.isGrowing = true;
 	}
 	move(){
-		this.offset+=2;
+		this.offset+=8;
 		if(this.offset < 0)return;
 		this.offset = -30;
 

@@ -76,11 +76,19 @@ function decodeWonderMail() {
         sum &= 0xFF;
     }
 
+<<<<<<< HEAD
     //////////////////////////
 
     if(sum != contentByteArray[0])
         alert("Code invalide");
 
+=======
+    if(sum != contentByteArray[0])
+        alert("Code invalide");
+
+    //////////////////////////
+
+>>>>>>> 35197a92a2ff111c1ddb963c30171f9d8d2babb3
     var pos = 0;
 
     function unpack(amount) { // FONCTION D'UNPACKING DES BITS
