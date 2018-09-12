@@ -27,7 +27,7 @@ body{
     overflow: hidden;
 }
 #logo img{
-    height: 100%;
+    height: 35px;
 }
 #navbar #logo #menu_button{
     margin-right: 10px;
