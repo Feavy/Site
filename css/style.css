@@ -52,6 +52,11 @@
     border-radius: 2px;
 }
 
+footer{
+    background-color: #4ea699;
+    padding: 2em;
+}
+
 .line_separator_black{
     min-width: 15em;
     width: 50%;
