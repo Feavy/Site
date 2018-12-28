@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Maven+Pro|Righteous" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../images/logo1.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <title>Feavy</title>
+    </head>
+    <body>
+        <div id="view">
+            <div id="player" style="visibility: hidden">
+                <img src="../images/close.png">
+                <div id="movie">
+                    <iframe id="ytplayer">
+                    </iframe>
+                </div>
+            </div>
+            <div id="navbar">
+                <img id="menu" src="../images/menu.png">
+                <a href="../news/index.html" class="button"><span>News</span></a>
+                <a href="../youtube/index.html" class="button"><span>Youtube</span></a>
+                <a href="#" class="button firstRight"><span>Aidez la chaîne</span></a>
+                <a href="#" class="button"><span>???</span></a>
+                <div id="middle">
+                    <a href="../index.html"><div id="logo"></div></a>
+                    <div id="medias">
+                        <div></div>
+                        <a href="https://www.youtube.com/feavy" target="_blank"><img src="../images/youtube.png" width="40" height="40"></a>
+                        <a href="https://twitter.com/feavyyt" target="_blank"><img src="../images/twitter.png" width="40" height="40"></a>    
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="part">
+                    <div class="partContent" style="text-align: center">
+                        <h1>Aidez-moi à m'améliorer</h1>
+                        <p>Dans ce formulaire vous pouvez me donner des conseils pour améliorer mes vidéos.<br>
+                            Vous pouvez également me donner des idées du sujet que vous voudriez que je traite en vidéo<br>
+                            (Il faut qu'elles aient un rapport avec l'informatique).</p>
+                        <div style="text-align: center; height:240px;">
+                            <textarea id="txtarea" style="width: 100%; max-width: 700px; height: 200px; font-family: arial;">
+                            </textarea><br><br>
+                            <span class="button2" id="uploadButton">Envoyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <footer>
+                Copyright © Feavy 2018
+            </footer>
+        </div>
+        <script src="../script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+        <script src="help.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Maven+Pro|Righteous" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/pell/dist/pell.min.css">
+        <link rel="icon" href="../images/logo2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <title>Feavy</title>
+    </head>
+    <body>
+        <div id="view">
+            <div id="navbar">
+                <img id="menu" src="../images/menu.png">
+                <a href="../news/index.html" class="button"><span>News</span></a>
+                <a href="../youtube/index.html" class="button"><span>Youtube</span></a>
+                <a href="../help/index.html" class="button firstRight"><span>Aidez la chaîne</span></a>
+                <a href="#" class="button"><span>???</span></a>
+                <div id="middle">
+                    <a href="../index.html"><div id="logo"></div></a>
+                    <div id="medias">
+                        <div></div>
+                        <a href="https://www.youtube.com/feavy" target="_blank"><img src="../images/youtube.png" width="40" height="40"></a>
+                        <a href="https://twitter.com/feavyyt" target="_blank"><img src="../images/twitter.png" width="40" height="40"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="part first">
+                    <div class="partContent">
+                        <img id="loadingText" src="https://camo.githubusercontent.com/a1a81b0529517027d364ee8432cf9a8bd309542a/687474703a2f2f692e696d6775722e636f6d2f56446449444f522e676966">
+                        <div id="connectionPanel" style="display: none;">
+                            <h1 class="title">Connexion</h1>
+                            <div>
+                                <label for="mail" style="margin-right: 55px">Email : </label><input id="mail" type="email"><br>
+                                <label for="password">Mot de passe : <input id="password" type="password"></label><br>
+                                <input type="submit" id="loginButton" class="button2">
+                             </div>
+                        </div>
+
+                        <div id="adminPanel" style="display: none;">
+                            <span class="button2 red" style="position: absolute; right: 0px;" onclick="firebase.auth().signOut(); document.location.reload(true)">Déconnexion</span>
+                            <h1 class="title articles">Articles</h1>
+                            <div class="articles" id="articles">
+                                <div class="article new">
+                                    <span class="button2 arrow disabled" id="pre">🢀</span>
+                                    <span class="button2 arrow" id="post">🢂</span>
+                                    <span class="button2" id="newArticleButton">Nouveau</span>
+                                </div>
+                            </div>
+                            <h1 class="title editor">Editeur</h1>
+                            <div class="editor">
+                                <div id="articleHeader">
+                                    <label for="articleTitle">Titre de l'article : </label><input id="articleTitle" type="text"><br><br>
+                                    <label for="categorie">Catégorie : </label>
+                                    <select id="categorieSelector">
+                                        <option value="article">Articles</option>
+                                        <option value="tutorial">Tutoriels</option>
+                                    </select>
+                                </div>
+                                <div id="editor">
+                                </div>
+                                <span class="button2" id="uploadButton">Envoyer</span>
+                                <span class="button2 red" id="cancelButton">Annuler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Copyright © Feavy 2018
+            </footer>
+        </div>
+        <script src="https://unpkg.com/pell"></script>
+        <script src="../script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+        <script src="admin.js"></script>
+    </body>
+</html>
