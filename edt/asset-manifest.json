@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "main.css": "/edt/static/css/main.e8903b99.chunk.css",
   "main.js": "/edt/static/js/main.8d2d7444.chunk.js",
   "main.js.map": "/edt/static/js/main.8d2d7444.chunk.js.map",
@@ -9,5 +10,17 @@
   "static/css/main.e8903b99.chunk.css.map": "/edt/static/css/main.e8903b99.chunk.css.map",
   "index.html": "/edt/index.html",
   "precache-manifest.34a80337bda7bac3c23ba6f056e088ba.js": "/edt/precache-manifest.34a80337bda7bac3c23ba6f056e088ba.js",
+=======
+  "main.css": "/edt/static/css/main.59a9c8f6.chunk.css",
+  "main.js": "/edt/static/js/main.fe333025.chunk.js",
+  "main.js.map": "/edt/static/js/main.fe333025.chunk.js.map",
+  "static/js/1.25aaa033.chunk.js": "/edt/static/js/1.25aaa033.chunk.js",
+  "static/js/1.25aaa033.chunk.js.map": "/edt/static/js/1.25aaa033.chunk.js.map",
+  "runtime~main.js": "/edt/static/js/runtime~main.a62422e8.js",
+  "runtime~main.js.map": "/edt/static/js/runtime~main.a62422e8.js.map",
+  "static/css/main.59a9c8f6.chunk.css.map": "/edt/static/css/main.59a9c8f6.chunk.css.map",
+  "index.html": "/edt/index.html",
+  "precache-manifest.9a4513225dbc3fa6ce3590ebc2166854.js": "/edt/precache-manifest.9a4513225dbc3fa6ce3590ebc2166854.js",
+>>>>>>> a185b7aca8aea904f4e971a91e1d888d8c36322f
   "service-worker.js": "/edt/service-worker.js"
 }
